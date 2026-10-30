@@ -47,3 +47,7 @@ This is a descriptive, observational analysis. Missing tumor-stage information, 
 ## Data Source
 
 METABRIC breast cancer dataset
+
+## Power BI Dashboard
+
+<img width="945" height="754" alt="METABRIC_Dashboard" src="https://github.com/user-attachments/assets/5585c52b-051a-4952-bc80-f50bcfedd590" />

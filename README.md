@@ -48,6 +48,21 @@ This is a descriptive, observational analysis. Missing tumor-stage information, 
 
 METABRIC breast cancer dataset
 
+
+## Project Files
+
+### Excel — Exploratory Data Analysis
+- [Excel Analysis Workbook](excel/BREAST-CLINICAL_CLEAN.xlsx)
+
+### SQL — Data Validation & Analysis
+- [01 — Data Validation](sql/sql/01_data_validation.sql)
+- [02 — Data Transformation](sql/sql/02_data_transformation.sql)
+- [03 — Treatment Combinations Analysis](sql/sql/03_treatment_combinations.sql)
+
+### Power BI — Interactive Dashboard
+- [Power BI Dashboard (.pbix)](powerbi/METABRIC_CLINICAL_DASHBOARD.pbix)
+
+
 ## Power BI Dashboard
 
 <img width="945" height="754" alt="METABRIC_Dashboard" src="https://github.com/user-attachments/assets/5585c52b-051a-4952-bc80-f50bcfedd590" />

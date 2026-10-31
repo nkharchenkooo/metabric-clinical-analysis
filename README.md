@@ -61,6 +61,7 @@ METABRIC breast cancer dataset
 
 ### Power BI — Interactive Dashboard
 - [Power BI Dashboard (.pbix)](powerbi/METABRIC_CLINICAL_DASHBOARD.pbix)
+- *Requires Power BI Desktop to open the interactive report.*
 
 
 ## Power BI Dashboard

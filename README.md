@@ -34,11 +34,58 @@ Developed an interactive report featuring patient demographics, tumor stage dist
 
 ## Key Findings
 
-- **Average age at diagnosis:** 61.09 years.
-- **Most represented age group:** 60–69 years.
-- **Missing tumor-stage information:** 26.31%.
-- **Most frequent known tumor stage:** Stage II.
-- **Both chemotherapy and radiation therapy:** 2.95% at Stage I, 24.63% at Stage II, and 45.22% at Stage III.
+
+### 1. Patient Demographics
+- The dataset contains **1,904 patient records**, with an average age at diagnosis of **61.09 years**.
+- The largest age group was **60–69 years**, representing 552 patients (29.0%).
+- Most patients were diagnosed between the ages of 50 and 79.
+
+### 2. Tumor Stage Distribution
+- **Stage II was the most frequently recorded tumor stage**, with 800 patients, followed by Stage I with 475 patients.
+- Tumor stage information was missing for **501 patients (26.31%)**, representing a significant data completeness limitation.
+
+### 3. Tumor Size and Disease Stage
+- Average tumor size increased across Stages I–III:
+  - Stage I: **17.40 mm**
+  - Stage II: **27.57 mm**
+  - Stage III: **48.23 mm**
+- Tumor size varied considerably within stages, indicating that size alone does not fully describe disease severity. Tumor size also contributes to clinical staging, so this association is partly expected.
+
+### 4. Tumor Size and Positive Lymph Nodes
+- The correlation between tumor size and the number of positive lymph nodes was **r ≈ 0.265**, indicating a weak positive relationship.
+- Tumor size explained approximately **7% of the variation** in positive lymph node counts in a simple linear analysis.
+- Larger tumors were not consistently associated with proportionally higher numbers of positive lymph nodes.
+
+### 5. Recorded Outcomes by Tumor Stage
+- The proportion of patients recorded as **Died of Disease** increased across Stages I–III:
+  - Stage I: **22.74%**
+  - Stage II: **35.75%**
+  - Stage III: **58.26%**
+- These values describe recorded outcomes rather than standardized survival rates, because follow-up duration and censoring were not accounted for.
+
+### 6. Treatment Patterns by Tumor Stage
+- Chemotherapy use increased from **3.79% at Stage I** to **51.30% at Stage III**.
+- Radiation therapy was recorded for **58.74% of Stage I**, **67.75% of Stage II**, and **84.35% of Stage III** patients.
+- Treatment use differed substantially by tumor stage, although these patterns cannot establish treatment effectiveness.
+
+### 7. Radiation Therapy and Surgery Type
+- Among Stage I patients, radiation therapy was recorded for **87.36% of patients undergoing breast-conserving surgery**, compared with **18.88% of patients undergoing mastectomy**.
+- A similar difference was observed at Stage II: **93.75% versus 53.08%**, respectively.
+- These findings highlight differences in recorded treatment strategies between surgical groups, without establishing why individual treatments were selected.
+
+### 8. Combined Treatment Analysis Using SQL
+- The proportion of patients receiving both chemotherapy and radiation therapy increased across Stages I–III:
+  - Stage I: **2.95%**
+  - Stage II: **24.63%**
+  - Stage III: **45.22%**
+- Radiation therapy alone was the most common treatment combination at Stage I (**55.79%**) and Stage II (**43.13%**).
+- At Stage III, combined treatment was the largest individual category (**45.22%**), followed by radiation therapy alone (**39.13%**).
+
+### Overall Interpretation
+
+The analysis identified differences in patient demographics, tumor characteristics, recorded outcomes, and treatment patterns across clinical stages. It also highlighted the importance of missing-data assessment, subgroup sample sizes, and cautious interpretation of observational clinical data.
+
+These findings are descriptive associations and should not be interpreted as causal relationships or clinical treatment recommendations.
 
 ## Limitations
 
